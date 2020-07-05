@@ -44,7 +44,7 @@ function check() {
         } else {
           return null;
         }
-      };
+      }
       // リクエストが送信できなかった時
       XHR.onerror = () => {
         alert("Request failed");
@@ -52,6 +52,7 @@ function check() {
  
       // イベントをキャンセルして、処理が重複しないようにしている
       e.preventDefault();
+
     });
   });
  }
